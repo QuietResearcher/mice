@@ -140,7 +140,7 @@ mice.impute.logreg.boot <- function(y, ry, x, wy = NULL, ...) {
   vec
 }
 
-augment <- function(y, ry, x, wy, maxcat = 50) {
+augment <- function(y, ry, x, wy, maxcat = 100) {
   # define augmented data for stabilizing logreg and polyreg
   # by the ad hoc procedure of White, Daniel & Royston, CSDA, 2010
   # This function will prevent augmented data beyond the min and
